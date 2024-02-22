@@ -22,6 +22,7 @@ jobs:
     - name: Build project
       run: |
         mkdir build
+        ls -l
         cmake --build ./build --config Debug --target all -j 4 --
     
     - name: Run test
