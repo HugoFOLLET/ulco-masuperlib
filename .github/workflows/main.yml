@@ -27,5 +27,7 @@ jobs:
         make
     
     - name: Run test
-      run: ./masuperlib-test
+      run: |
+        ls -l
+        ./masuperlib-test
 
