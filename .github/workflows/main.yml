@@ -15,6 +15,9 @@ jobs:
       run: |
         sudo apt-get update 
         sudo apt-get install -yq cmake catch2
+    
+    - name: Test
+      run: ls -l -a
 
     - name: Build project
       run: cmake --build ../build --config Debug --target all -j 4 --
