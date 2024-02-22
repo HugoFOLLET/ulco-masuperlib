@@ -22,8 +22,8 @@ jobs:
     - name: Build project
       run: |
         mkdir build
-        ls -l
-        cmake --build ./build --config Debug --target all -j 4 --
+        cd build
+        cmake ..
     
     - name: Run test
       run: build/masuperlib-test
